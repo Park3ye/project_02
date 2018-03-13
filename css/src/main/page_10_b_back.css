@@ -1,0 +1,53 @@
+/*page_10_b.css*/
+/*매장 찾기 기능 페이지 입니다*/
+#produceStoreBox{width: 100%;min-width: 960px; height: auto; 
+            padding: 150px 0;box-sizing:border-box; background-color: #fff;}
+.ps_area{width: 960px;height:auto; margin: 0 auto;
+         background-color:#fff}
+/*tap wrap*/
+.ps_tap_wrap{width: 100%;height: 100%;}
+/*tap 01*/
+.ps_tap_01{width: 100%;height: 100%; display: none;}
+.ps_area_tap{width: 100%; height: 36px; margin-bottom: 60px; }
+.ps_area_tap li{float: left;font-size: 18px;font-weight: bold;
+                text-align: center;width: 479px;  height: 100%;
+                padding-top:5px; box-sizing:border-box; 
+                border-right:1.5px solid #333; 
+                border-bottom:1.5px solid #333;}
+.ps_area_tap>li:first-child{margin-right: 2px;}
+.ps_area_tap>li>a{display: block;width: 100%;height: 100%;}
+.ps_area_tap>li:hover{background-color: #333; color:#fff;}
+.ps_area_tap>li:focus{background-color: #333; color:#fff;}
+.ps_area_tap>li>a:focus{display: block;background-color: #333; color:#fff;}
+
+.ex_img_01{width: 100%;height: 650px;
+        background-image: url(../../../img/page10_tap1.png);
+        background-size:100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+.ex_img_01>a{display: block;width: 190px;height: 390px; float: left;margin:110px 0 0 30px;
+    background-image: url(../../../img/findstore_10p.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px #333;
+    }
+/*tap 01 end*/
+
+/*tap 02 start*/
+.ps_tap_02{width: 100%;height: 100%; display:block;}
+.ex_img_02{width: 100%;height: 300px;
+        background-image: url(../../../img/page10_tap2-a.png);
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+.ex_img_03{width: 100%;height: 600px;
+        background-image: url(../../../img/page10_tap2-b.png);
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+/*tap 02 end*/

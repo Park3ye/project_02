@@ -1,0 +1,12 @@
+/*page_04_bridge.css*/
+/*이 페이지는 이벤트페이지임을 알리는 배경역할의 영역 입니다.*/
+#bridgeBox{width: 100%; min-width: 960px; height: 200px;
+           background-image: url(../../../img/event_page_bgi.png);
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size:100%;
+           }
+#bridgeBox>span{display: block; width: 960px; height: auto;
+                margin: 0 auto; color:#fff; text-align: center;
+                font-size: 60px; font-weight: bold;line-height: 190px;
+                text-shadow: 5px 5px 5px #333;}

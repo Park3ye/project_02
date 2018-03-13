@@ -1,0 +1,10 @@
+/* mainConTent_05.css */
+
+/* common area */
+
+#partnerShipBox{width: 100%; min-width: 960px; height: 180px; background-color: #fa7;}
+.ps_area_link{width: 650px;height: 50px; margin:auto;
+              padding-top: 70px; box-sizing: border-box;}
+.ps_area_link dt {font-size: 22px;font-weight: bold; color:#6c1c00; text-align: center;float: left;}
+.ps_area_link dd {margin-left: 60px;font-size: 14px; float: left;line-height: 35px;}
+.ps_area_link img{float: right;margin-top: 5px;}

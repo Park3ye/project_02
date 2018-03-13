@@ -1,0 +1,25 @@
+/*introduce_02.css*/
+/* 소개하는 페이지 입니다.*/
+#introduceBox{width: 100%; height:100%; margin: 0 auto; background-color: #333;
+}
+/*배경이미지*/
+.intro_wrap{
+  width: 100%;min-width: 960px;height:700px;margin:0 auto;
+  background-image: url(../../../img/since2006_b.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  padding-top: 150px; box-sizing: border-box;
+}
+/*첫번째 텍스트 타이틀 */
+.intro_wrap>div{width: 580px;height:180px;
+                margin: 0 auto;text-align: center;font-size: 60px;
+                color:#fff;font-weight: bold;
+                border-top:3px solid white;
+                border-bottom:1px solid white;
+                text-shadow:5px 5px 5px #333;
+                }
+/* 첫번째 텍스트 타이틀 설명 > 제목과 내용 */
+.intro_wrap>dl{width: 600px;height: 70px;
+margin: 20px auto;line-height: 35px;text-align: center;color:#fff;
+text-shadow: 5px 5px 5px #333;}

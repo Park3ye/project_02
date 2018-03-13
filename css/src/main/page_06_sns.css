@@ -1,0 +1,9 @@
+/*page_06_sns.html*/
+/* 이 페이지는 소셜 미디어 속에서 소통하는 페이지 입니다.*/
+/*이 페이지는 다른 부분들을 먼저 손본 후에 디테일하게 작업하도록 하겠습니다.*/
+#snsContentBox{width: 100%;min-width: 960px; height:auto; background-color: #fff;padding: 150px 0 100px;box-sizing: border-box;}
+/*임시코드 // 다른 페이지 작업 후 돌아오기 */
+.scb_area{width: 960px;height: 1100px; background-color: #888;margin: 0 auto;
+          background-image: url(../../../img/sns_pd.png);
+          background-position: center 200px;
+          }

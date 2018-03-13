@@ -1,0 +1,78 @@
+/* mainConTent_03.css */
+
+/*제품 선택 하면 해당페이지로 이동하는 영역입니다*/
+/* common area */
+
+/*이영역 전체 틀*/
+#productBox{width: 100%;  min-width: 960px; height:800px; background-color: #fff;}
+/*제목과 내용 텍스트 */
+.foodtit_wrap{width: 700px;height: auto; margin: 0 auto;}
+.title{width: 100%;height: auto;text-align: center;padding-top: 100px;box-sizing: border-box;}
+.title dt{font-size: 24px;font-weight: bold;color:#6c1c00; margin-bottom: 20px;}
+.title dd{margin-bottom: 50px;}
+
+/*제품설명 영역*/
+.food_wrap{width: 900px;height: 450px; margin: 0 auto 100px;}
+/*제품 박스*/
+.food_wrap div{width: 100%; height: 100%;margin:0 5px 5px 0;}
+
+.food_wrap div:hover{font-weight: bold;}
+/*제품 링크 박스*/
+.food_wrap div>a{display: block;width:100%;height:100%;transition:all 1000ms ease;}
+
+  /* div안에 dl안에 있는 dt와 dd의 텍스트를 하단으로 옮기기 위한 css */
+.food_wrap div:nth-of-type(1) dl{padding-top: 86%; box-sizing:border-box;}
+
+/*제품에 hover effect */
+.food_wrap div>a:hover, 
+.food_wrap div>a:focus{display: block;width:100%;height:100%;background-color:transparent;
+                       transition:all 500ms ease;}
+
+.food_wrap div:nth-of-type(1){width: 48.89%;height: 100%;float: left; margin-right:5px;}
+.food_wrap div:nth-of-type(1)>a{
+  background-image: url(../../../img/pd_menu/coffee_01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  background-color: #fff;}
+
+
+.food_wrap div:nth-of-type(2){width: 25%;height: 49.4%; float: left;}
+.food_wrap div:nth-of-type(2)>a{ 
+  background-image: url(../../../img/pd_menu/tea_01.JPG);
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size:65%;
+  background-color:#fff;}
+
+.food_wrap div:nth-of-type(3){width: 25%;height: 49.4%;  margin-right: 0;float: left;}
+.food_wrap div:nth-of-type(3)>a{
+  background-image: url(../../../img/pd_menu/ice_01.jpg);
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size:65%;
+  background-color:#fff;}
+
+.food_wrap div:nth-of-type(4){width: 25%;height: 49.4%; float: left;}
+.food_wrap div:nth-of-type(4)>a{
+ background-image: url(../../../img/pd_menu/paikscino_01.jpg);
+ background-repeat: no-repeat;
+ background-position:top;
+  background-size:65%;
+  background-color:#fff;}
+
+.food_wrap div:nth-of-type(5){width: 25%;height: 49.4%; margin-right: 0;float: left;}
+.food_wrap div:nth-of-type(5)>a{
+  background-image: url(../../../img/pd_menu/bread_01.jpg);
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size:65%;
+  background-color:#fff;}
+
+/*제품의 div hover effect */
+.food_wrap div>a:hover{background-size:80%;}
+.food_wrap div>a:focus{background-size:80%;}
+
+.food_wrap div a dl{width: 100%;height: auto; text-align: center;padding-top: 72%; box-sizing:border-box;}
+.food_wrap dl dt{width: 100%;height: auto;font-size: 20px; color:#6c1c00;font-weight: bold;}
+.food_wrap dl dd{width: 100%;height: auto;}

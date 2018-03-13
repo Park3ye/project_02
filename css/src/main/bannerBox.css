@@ -1,0 +1,44 @@
+/* bannerBox.css */
+
+/* commonPage */
+
+#bannerBox{width: 100%; min-width:960px; height: 700px; background-color: #ffc;
+position: relative;overflow:hidden;}
+
+.indicator{width: 100%; height: auto; position:absolute;z-index:100;
+          left:50%;top: 88.5%;margin-left:-120px;}
+.indicator ul{width:280px;height: 100%;}          
+.indicator li{width:50px;height:50px; float:left;}
+.indicator li button{display: block;font-size: 25px; width: 100%;height: 100%;background-color: transparent;
+                     color:#09f;}
+.indicator li button:hover{color:#f09;}
+.btn{width: 100%; height:auto; z-index:200;position: absolute; left:0;
+  top: 50%; margin-top: -100px;}
+.btn button{display: block;width: 200px; height:200px;background-color: transparent;font-size: 60px;}
+.left_btn{float: left;}
+.right_btn{float: right;}
+/*
+vw값 : 크기(해당크기) / 기준치(화면사이즈) * 100 
+*/
+.ad_box{width: 500%; height:700px; background-color: #9bf;}
+.ad_box ul{width: 100%;height: 100%; overflow: hidden;}
+.ad_box ul li{width: 20%; height:100%;float: left;}
+.picture_01{background-image: url(../../../img/pd_banner/banner_01.jpg);
+            background-position: center;
+            background-size:cover;}
+.picture_02{background-image: url(../../../img/pd_banner/banner_02.jpg);
+            background-position: center;
+            background-size:cover;}
+.picture_03{background-image: url(../../../img/pd_banner/banner_03.jpg);
+            background-position: center;
+            background-size:cover;}
+.picture_04{background-image: url(../../../img/pd_banner/banner_04.jpg);
+            background-position: center;
+            background-size:cover;}
+.picture_05{background-image: url(../../../img/pd_banner/banner_01.jpg);
+            background-position: center;
+            background-size:cover;}
+
+
+/*bannerBox */
+

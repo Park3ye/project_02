@@ -1,0 +1,21 @@
+/*page_07_a.css*/
+/*이 페이지는 7번쨰 페이지인 멤버쉽 페이지 입니다.*/
+
+#eventBox{width: 100%; min-width: 960px; height: 100px; background-color:#555;}
+.eb_wrap{width: 960px; height: 100%;margin: 0 auto; background-color: inherit;}
+.eb_wrap dl{line-height: 100px;}
+.eb_content{width: auto;height: 100%;float: left;background-color: inherit;
+            color:#fff;}
+.eb_content>dt{width:auto; height:40px;float: left;font-size: 24px;}
+.eb_content>dt:after{content:"";border-right:1.5px solid #ffa943;
+                     padding-left: 15px;box-sizing: border-box;}
+.eb_content>dd{width: auto;height: auto;float: left;
+               margin-left: 15px;font-size: 14px;}
+.eb_breadCurmbs{width:auto; height: 100%;float: right;
+                background-color: inherit;
+                color:#fff;font-size: 14px;}
+.eb_breadCurmbs>dt{float: left;}
+.eb_breadCurmbs>dt:after{content:">";}
+.eb_breadCurmbs>dd{float: left;}
+.eb_breadCurmbs>dd:after{content:">";}
+.eb_breadCurmbs>span{display: block;float: left;padding-top:2px; box-sizing: border-box; }

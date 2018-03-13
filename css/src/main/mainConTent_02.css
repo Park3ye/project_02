@@ -1,0 +1,8 @@
+/* mainConTent_02.css */
+/*이미지랑 문구는 전체틀 작업 후 다시 수정 */
+/* common area */
+
+#adTextBox{width:100%; min-width:960px; height:420px; 
+  background-image: url(../../../img/content_02.jpg);
+  background-position: center; background-size: cover ;
+}

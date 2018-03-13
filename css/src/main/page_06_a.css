@@ -1,0 +1,23 @@
+/*page_05_a.css*/
+/*이 페이지는 5번쨰 페이지인 공지사항 페이지 입니다.*/
+
+#snsBox{width: 100%; min-width: 960px; height: 100px; background-color:#555;}
+.sns_wrap{width: 960px; height: 100%;margin: 0 auto; background-color: inherit;}
+.sns_wrap dl{line-height: 100px;}
+.sns_content{width: auto;height: 100%;float: left;background-color: inherit;
+            color:#fff;}
+.sns_content>dt{width:auto; height:40px;float: left;font-size: 24px;}
+.sns_content>dt:after{content:"";border-right:1.5px solid #ffa943;
+                     padding-left: 15px;box-sizing: border-box;}
+.sns_content>dd{width: auto;height: auto;float: left;
+               margin-left: 15px;font-size: 14px;}
+.sns_breadCurmbs{width:auto; height: 100%;float: right;
+                background-color: inherit;
+                color:#fff;font-size: 14px;}
+.sns_breadCurmbs>dt{float: left;}
+.sns_breadCurmbs>dt:after{content:">";}
+.sns_breadCurmbs>dd{float: left;}
+.sns_breadCurmbs>dd:after{content:">";}
+.sns_breadCurmbs>span{display: block;float: left;}
+.sns_breadCurmbs>span:after{content:">";}
+.sns_breadCurmbs>p{float: left;padding-top: 0.5px; box-sizing: border-box;}

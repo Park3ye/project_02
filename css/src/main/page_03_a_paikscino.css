@@ -1,0 +1,25 @@
+/*page_03_a_paikscino.css*/
+/*이 페이지는 3번쨰 페이지인 커피메뉴를 소개하는 페이지 입니다.*/
+
+/*이영역은 #555*/
+#coffeeBox{width: 100%; min-width: 960px; height: 100px; background-color:#555;}
+.cb_wrap{width: 960px; height: 100%;margin: 0 auto; background-color: inherit;}
+.cb_wrap dl{line-height: 100px;}
+.cb_content{width: auto;height: 100%;float: left;background-color: inherit;
+            color:#fff;}
+.cb_content>dt{width:auto; height:40px;float: left;font-size: 24px;}
+.cb_content>dt:after{content:"";border-right:1.5px solid #ffa943;
+                     padding-left: 15px;box-sizing: border-box;}
+.cb_content>dd{width: auto;height: auto;float: left;
+               margin-left: 15px;font-size: 14px;}
+.cb_breadCurmbs{width:auto; height: 100%;float: right;
+                background-color: inherit;
+                color:#fff;font-size: 14px;}
+.cb_breadCurmbs>dt{float: left;}
+.cb_breadCurmbs>dt:after{content:">";}
+.cb_breadCurmbs>dd{float: left;}
+.cb_breadCurmbs>dd:after{content:">";}
+.cb_breadCurmbs>span{display: block;float: left;line-height: 102px;}
+.cb_breadCurmbs>span:after{content:">";}
+.cb_breadCurmbs>p{display: block;float: left;
+padding-top: 1px; box-sizing: border-box;line-height: 97px;}

@@ -1,0 +1,42 @@
+/*page_09_b.css*/
+/*매장소개에 대한 페이지 입니다.
+사실상 9p와 10p를 탭기능으로 하나로 합친 페이지*/
+#produceStoreBox{width: 100%;min-width: 960px; height: auto; 
+            padding: 150px 0;box-sizing:border-box; background-color: #fff;}
+.ps_area{width: 960px;height:auto; margin: 0 auto;
+         background-color:#fff}
+/*tap 01*/
+.ps_tap_01{width: 100%;height: 100%;}
+.ps_area_tap{width: 100%; height: 36px; }
+.ps_area_tap li{float: left;font-size: 18px;font-weight: bold;
+                text-align: center;width: 479px;  height: 100%;
+                padding-top:5px; box-sizing:border-box; 
+                border-right:1.5px solid #333; 
+                border-bottom:1.5px solid #333;}
+.ps_area_tap>li:first-child{margin-right: 2px;}
+.ps_area_tap>li>a{display: block;width: 100%;height: 100%;}
+.ps_area_tap>li:hover{background-color: #333; color:#fff;}
+.ps_area_tap>li:focus{background-color: #333; color:#fff;}
+.ps_area_tap>li>a:focus{display: block;background-color: #333; color:#fff;}
+.ps_area_title{text-align: center;font-size: 28px;padding-top: 60px; box-sizing: border-box; color:#6c1c00;}
+.ps_area_text {text-align: center;padding-top: 18px; 
+               box-sizing: border-box;padding-bottom: 60px;}
+.ex_img_01{width: 100%;height: 850px;
+        background-image: url(../../../img/page9_tap1.png);
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+/*tap 01 end*/
+
+/*tap 02 start*/
+.ps_tap_02{width: 100%;height: 100%; display: none;
+}
+.ex_img_02{width: 100%;height: 750px;
+        background-image: url(../../../img/page9_tap2.png);
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+/*tap 02 end*/

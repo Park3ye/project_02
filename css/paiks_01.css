@@ -1,0 +1,14 @@
+/*paiks_01.css*/
+
+@import url('./src/all/wrap.css');
+@import url('./src/all/headBox.css');
+@import url('./src/main/bannerBox.css');
+@import url('./src/main/mainConTent_01.css');
+@import url('./src/main/mainConTent_02.css');
+@import url('./src/main/mainConTent_03.css');
+@import url('./src/main/mainConTent_04.css');
+@import url('./src/main/mainConTent_05.css');
+@import url('./src/all/asideBox.css');
+@import url('./src/all/footBox.css');
+
+

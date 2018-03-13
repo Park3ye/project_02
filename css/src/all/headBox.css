@@ -1,0 +1,110 @@
+/* headBox.css */
+
+/*
+unb :font -  16px
+gnb :font -  20px
+*/
+/*body{overflow:hidden;}*/
+/* paiks다방 페이지의 헤드영역 CSS 입니다.*/
+/* common area */
+#headBox{width: 100%; min-width: 960px; height: auto;}
+
+/*unb박스 시작*/
+#unbBox{width: 100%; min-width: 960px; height:auto;background-color:#333; color:#fff;margin: 0 auto;}
+.ub_area{width: 960px; height:100%;background-color: #333;margin: 0 auto; color:#fff; box-sizing: border-box;
+font-size: 10px; line-height: 28px;}
+/*unb박스 내부요소*/
+.ub_area>span{display: block;float: left;text-transform: uppercase;width: auto;height: 30px;}
+.ub_area>span>a{display: block;width: 100%;height: 100%;}
+
+.ub_area>ul{float: right;}
+.ub_area>ul>li{width: auto; height: 30px;float: left;margin-right: 50px;}
+.ub_area>ul>li>a{display: block;width: 100%;height: 100%;}
+.ub_area>ul>li:nth-child(4){margin-right:15px;}
+.ub_area>ul>li:nth-child(5){margin-right:0;}
+
+/*gnb박스 시작*/
+#gnbBox{width: 960px; margin: 0 auto; height:100px;
+        position: relative;}
+/*로고*/
+/*h1{display: block;width: 170px; height:100%;float:left;
+background-image: url(../../../img/BI.png);
+background-repeat: no-repeat;
+background-size::auto;
+background-position: center;
+margin-right: 113px;}
+#gnbBox h1 a{display: block; width: 100%;height: 100%;}*/
+/*로고 끝*/
+.logo{display: block;
+   width: 170px; height: 100%; float: left; margin-right: 113px;
+   background-color: #fff;}
+.logo>a{display: block;
+width: 100%;height: 100%;
+background-image: url(../../../img/BI.png);
+background-repeat: no-repeat;
+background-size::auto;
+background-position: center;}
+
+
+
+
+
+/*메뉴 5개 디자인 
+-1차 : 메뉴만
+-2차 : 메뉴 hover시 하위메뉴 나타내기 */
+#gnbBox>ul>li{width: auto; height: 100%;float:left;
+              font-size: 15.5px;font-weight: bold;
+              padding-top: 37px; box-sizing: border-box;
+margin-right: 50px;}
+#gnbBox>ul>li>a{display: block;
+width: 100%; height:100%;text-transform:capitalize; }
+#gnbBox>ul>li:last-child{margin-right: 0;}
+
+.menu_wrap{width:auto;float: right;
+ }
+/*헤드 메뉴 배경을  after를 활용하여 가로값을 풀페이지로 설정 후 
+그 위에 ps_coffee>li를 올리고, 각각의 메뉴마다 호버시 이 메뉴별 li
+를 보이게 한다.*/
+.menu_wrap .menu_ps:after{content:" ";display: block; 
+                            width:100vw; height: 200px; 
+                            background-color:#fff;
+                            z-index:-10;
+                            position: absolute;top:17%;
+                            left:50%; margin-left:-50vw;
+                            border-bottom:2px solid #333;}
+
+
+/*menu안에 호버시 보일 하위menu 생성*/
+
+.ps_coffee{width:100%;height:250px; background-color:;
+         position: absolute;left:0; z-index: 10;
+         display: none; text-align: right;
+       padding-top: 30px; box-sizing: border-box;
+       }
+       /*메뉴 호버시 나타나는 첫번째줄 에 대한 효과*/
+.ps_coffee>li{width:calc(20.33% - 1rem);height:35px;float: left; margin-right: 1rem; padding-top: 5px; box-sizing: border-box; font-size: 14px;}
+.ps_coffee>li:last-child{margin-right: 0}
+
+.bdb_line{border-bottom:1.5px solid #ccc;}
+
+.menu_01:hover .ps_coffee{display: block;}
+
+/*백다방역사 파트 감싸는 랩*/
+.ps_list>ul{width: 100%;height:auto;
+            box-sizing: border-box; }
+            /*백다방의역사 파트 */
+.ps_list>ul>li{width: 100%;height: 25px; background-color:;
+               margin-bottom: 5px;line-height: 55px;font-size: 12px;color:#888;}
+
+
+
+
+
+
+
+.menu_01:hover .ps_coffee{display: block;}
+.menu_02:hover .ps_coffee{display: block;}
+.menu_03:hover .ps_coffee{display: block;}
+.menu_04:hover .ps_coffee{display: block;}
+.menu_05:hover .ps_coffee{display: block;}
+.menu_06:hover .ps_coffee{display: block;}

@@ -1,0 +1,12 @@
+/*page_12_bridge.css*/
+/* 12페이지인 가맹점 질의응답 입니다.*/
+#bridgeBox{width: 100%; min-width: 960px; height: 200px;
+           background-image: url(../../../img/franchise_page_bgi.png);
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size:100%;
+           }
+#bridgeBox>span{display: block; width: 960px; height: auto;
+                margin: 0 auto; color:#fff; text-align: center;
+                font-size: 60px; font-weight: bold;line-height: 190px;
+                text-shadow: 5px 5px 5px #333;}

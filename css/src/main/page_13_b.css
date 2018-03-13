@@ -1,0 +1,38 @@
+/*page_13_b.css*/
+/*로그인기능 페이지 입니다*/
+#loginBox{width: 100%;min-width: 960px; height: auto; 
+            padding:50px 0 150px 0;box-sizing:border-box; background-color: #fff;}
+.log_area{width: 960px;height:450px; margin: 0 auto;
+          padding: 60px 80px;box-sizing: border-box;
+         border:1px solid silver; border-radius: 5px;}
+.log_img{width: 45%;height: 100%;float: left;
+         background-image: url(../../../img/log_bgi.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:contain;
+         
+}
+/*제목과 부제목*/
+.log_form{width: 45%;height: 100%; float: right;}
+.log_form>h2{font-size: 24px;text-align: center;
+             color:#6c1c00;padding-bottom: 40px; box-sizing: border-box;}
+.log_form>p{font-size: 18px;text-align: center;
+            padding-bottom: 45px; box-sizing: border-box;}
+/*아이디,패스워드 입력란*/
+.member li input{width: 100%;height: 24px;font-size:12px;border:1px solid silver;}
+.user>input{margin-bottom: 3px;}
+.pwd>input{margin-bottom:5px; box-sizing: border-box;}
+/*로그인, 회원가입 버튼*/
+.login_btn{padding-top: 5px; box-sizing: border-box;
+           padding-bottom: 50px;border-bottom: 1px solid silver;}
+
+.login_btn>input{width: 49.5%; height: 30px;float: left;background-color: #6c1c00;color:#fff;font-size: 12px; border-radius: 3px;font-weight: bold;}
+.login_btn>input:hover{background-color: #432733;}
+.login_btn>.btn_01{}
+.login_btn>.btn_02{ float: right;}
+.find_text{display: block;font-size: 12px;padding-top: 20px; box-sizing: border-box;text-align: center;}
+.find_box{margin-top: 10px;}
+.find_box>a{display: block; width: 49.5%;height: 30px;float: left;
+ background-color: #999;border-radius: 3px; font-size: 12px;text-align: center; line-height: 30px;color:#fff;font-weight: bold;}
+.find_box>.find_pw{float: right;}
+.find_box>a:hover{background-color:#555;}

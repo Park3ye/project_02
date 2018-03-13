@@ -1,0 +1,21 @@
+/* footBox.css */
+
+/*commonPage*/
+
+#footBox{width: 100%; min-width: 960px; height: 320px; background-color: #333; color:#fff;}
+.fb_area{width: 960px; height: auto; margin: 0 auto;  
+             padding-top:50px; box-sizing:  border-box; }
+/*the born css*/
+.fb_area>a{display: block;width: 100%; height: 100%; }
+.fb_area>a>span{display: block;width:auto;  height: auto;
+                 font-size:40px;font-weight: bold;text-transform:uppercase; color:#aaa;
+                 margin-bottom:30px;}
+/*개인정보 등등의 5가지 사항 css*/
+.fb_element{width: 100%;  height: 100%; }
+.fb_element>a{display: block;width: 100%; height: 100%; }
+.fb_element>a>dt{width:auto;  height: auto; float: left;
+                margin-right:20px; color:#aaa;}
+.fb_element>dd{width: 100%; height: auto;float: left;
+color:#aaa;}
+
+.fb_copyright{margin-top: 30px;}
