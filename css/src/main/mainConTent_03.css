@@ -39,7 +39,7 @@
 
 .food_wrap div:nth-of-type(2){width: 25%;height: 49.4%; float: left;}
 .food_wrap div:nth-of-type(2)>a{ 
-  background-image: url(../../../img/pd_menu/tea_01.JPG);
+  background-image: url(../../../img/pd_menu/tea_01.jpg);
   background-repeat: no-repeat;
   background-position:top;
   background-size:65%;
