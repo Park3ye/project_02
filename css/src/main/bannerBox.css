@@ -3,15 +3,27 @@
 /* commonPage */
 
 #bannerBox{width: 100%; min-width:960px; height: 700px; background-color: #ffc;
-position: relative;overflow:hidden;}
+position: relative;}
 
 .indicator{width: 100%; height: auto; position:absolute;z-index:100;
           left:50%;top: 88.5%;margin-left:-120px;}
-.indicator ul{width:280px;height: 100%;}          
-.indicator li{width:50px;height:50px; float:left;}
-.indicator li button{display: block;font-size: 25px; width: 100%;height: 100%;background-color: transparent;
-                     color:#09f;}
-.indicator li button:hover{color:#f09;}
+.indicator ul{width:250px;height: 100%; float:left;}          
+.indicator li{width:50px;height:50px; float:left;  overflow: hidden;}
+/*인디케이터 버튼 5개*/
+.indicator li i{display: block;width: 100%;height: 100%;text-align: center;
+                line-height: 50px;}
+.indicator li a{display: block;font-size: 25px; width: 100%;height: 100%;
+                background-color:transparent; color:#09f;}
+.indicator li a:hover{color:#f09;}
+.indicator li.focus a{color:#09f;}
+.indicator li a:focus{border:1px solid #09f; box-sizing:border-box; }
+
+/*플레이버튼 */
+.play_btn{width: 50px;height: 50px; float: left;}
+.play_btn button{display: block;font-size: 25px; width: 100%;height: 100%;background-color:transparent; color:#09f;line-height: 55px;}
+.play_btn button:hover{color:#f09;}
+
+/*좌우 버튼 */
 .btn{width: 100%; height:auto; z-index:200;position: absolute; left:0;
   top: 50%; margin-top: -100px;}
 .btn button{display: block;width: 200px; height:200px;background-color: transparent;font-size: 60px;}
@@ -20,9 +32,9 @@ position: relative;overflow:hidden;}
 /*
 vw값 : 크기(해당크기) / 기준치(화면사이즈) * 100 
 */
-.ad_box{width: 500%; height:700px; background-color: #9bf;}
-.ad_box ul{width: 100%;height: 100%; overflow: hidden;}
-.ad_box ul li{width: 20%; height:100%;float: left;}
+.ad_box{width: 100%; height:100%; background-color: #9bf;}
+.ad_box ul{width: 100%;height: 100%;}
+.ad_box ul li{width: 100%; height:100%;}
 .picture_01{background-image: url(../../../img/pd_banner/banner_01.jpg);
             background-position: center;
             background-size:cover;}
@@ -35,7 +47,7 @@ vw값 : 크기(해당크기) / 기준치(화면사이즈) * 100
 .picture_04{background-image: url(../../../img/pd_banner/banner_04.jpg);
             background-position: center;
             background-size:cover;}
-.picture_05{background-image: url(../../../img/pd_banner/banner_01.jpg);
+.picture_05{background-image: url(../../../img/pd_banner/banner_05.jpg);
             background-position: center;
             background-size:cover;}
 
