@@ -22,77 +22,85 @@
 // 인디케이트 영역
   var indi       = bannerBox.find('.indicator');
   var indiLi     = indi.find('li');
+
 // 배너 및 인디케이트 첫요소 복제 후 마지막 요소로 이동
   var bannerClone = bannerLi.first().clone(true);
-      bannerLi.last().after(bannerClone);
+      bannerUl.append(bannerClone);
   var indiClone   = indiLi.first().clone(true);
-      indiLi.last().after(indiClone);
+      indi.append(indiClone);
 
 // 변수내용 재설정
-      bannerWrap = bannerBox.find('.banner_wrap');
+      bannerWrap = bannerBox.find('.ad_box');
       bannerUl   = bannerWrap.children('ul');
       bannerLi   = bannerUl.children('li');
 // 인디케이트 영역
       indi       = bannerBox.find('.indicator');
       indiLi     = indi.find('li');
-  var indiP      = indi.find('p');
-  var indiNow    = indiP.find('.now');
-  var indiTotal  = indiP.find('.total');
-  var playBtn    = indi.find('button');
+
+  // var indiP      = indi.find('p');
+  // var indiNow    = indiP.find('.now');
+  // var indiTotal  = indiP.find('.total');
+  var playBtn    = $('.play_btn').find('button');
+
 // 좌,우 버튼영역
   var btn        = bannerBox.find('.btn');
-  var lbtn       = btn.find('.lbtn');
-  var rbtn       = btn.find('.rbtn');
+  var lbtn       = btn.find('.left_btn');
+  var rbtn       = btn.find('.right_btn');
 // 자동 슬라이드에 대한 변수지정
-  var myAutoSlide, startSlide, stopSlide;
+  var myAutoSlide;
+  var startSlide; 
+  var stopSlide;
   var timed      = 3000;
 
 // 가로형 슬라이드형태로 변경
 bannerBox.css({overflow:'hidden'});
 var bannerLiLength = bannerLi.length;
+// console.log(bannerLiLength);
 bannerUl.css({width:bannerLiLength*100+'%'});
 var bannerW = bannerUl.innerWidth();
+// console.log(bannerW);
+bannerLi.css({float:'left', width:bannerW/bannerLiLength });
+// ----------------------------------------------------------------------
 
-bannerLi.css({float:'left', width:bannerW/bannerLiLength});
+
 
 // -----------------------------------------------------------
 // - tabindex 제거(첫번째 배너의 링크는 tabindex를 0으로 처리하여 사용)
-var myTab = function(i) {
-  bannerLi.find('a').attr('tabindex', '-1');
-  bannerLi.eq(i).find('a').attr('tabindex', '0');
-};
-myTab(0);
 
+// 버튼 클릭시 숫자가 오르거나 내려가게 해서 공통 수치를 얻도록 처리
 var myIndex = 0;
-var bannerSlideI = function(i) {
 
+var bannerSlideI = function(i) {
   if(i < 0){ 
-    i = bannerLi.length-1;
-    bannerUl.stop().css({left:-i*100+'%'});
-    i--;
-    bannerUl.stop().animate({left:-(i-1)*100+'%'});
-    }else if(i >= bannerLi.length-1){
-    i = 0;
-    bannerUl.stop().animate({left:-(bannerLi.length-1)*100+'%'},function() {
-      bannerUl.stop().css({left:-i*100+'%'});
-    });
-  }else{
-    bannerUl.stop().animate({left:-i*100+'%'});
+      i = bannerLiLength-1; //현위치가 0값보다 작을때, 마지막녀석의 값을 가져와 그 위치로 이동
+      bannerUl.stop().css({marginLeft:-i*100+'%'}); // 0보다 작을때 -500%
+      i--;
+      bannerUl.stop().animate({marginLeft:-i*100+'%'}); //5번째  -400%
+      }else if(i >= bannerLiLength-1){ 
+    //현재위치가 마지막녀석의 값보다 크거나 같을떄, 값을 초기값으로 변경 : 0
+      i = 0;
+      // 콜백함수
+      bannerUl.stop().animate({marginLeft:-(bannerLiLength-1)*100+'%'}, function() {
+        bannerUl.stop().css({marginLeft:0});
+      });
+  }else{ //이를 제외한 다른 모든경우에...
+    bannerUl.stop().animate({marginLeft:-i*100+'%'});
   }
   // console.log(i);
   indiLi.removeClass('focus'); 
   var bannerIndex =  bannerLi.eq(i);
   indiLi.eq(i).addClass('focus');
 
-  // myTab 함수 사용
-  myTab(i);  indiNow.text(i+1);
+
+  // indiNow.text(i+1);
+  console.log(i);
   myIndex = i;
   return myIndex;
 };
 
 // indicator 배너갯수파악(배너숫자표기)
-  indiNow.text('1');
-  indiTotal.text(bannerLi.length-1);
+  // indiNow.text('1');
+  // indiTotal.text(bannerLi.length-1);
 
 // - 1. 인디케이터 클릭시 fade효과
 // .첫인디케이트, (.focus)
@@ -110,13 +118,46 @@ var bannerSlideI = function(i) {
     e.stopPropagation();
     e.preventDefault();
     var _this = $(this);
-    (_this[0] == lbtn[0]) ? myIndex-- : myIndex++;
+    // (_this[0] == lbtn[0]) ? myIndex-- : myIndex++;
+
+    if(_this[0] == lbtn[0]){
+      myIndex--;
+    } else {
+      myIndex++;
+    }
+//  -------------------------------------
+// 버튼 클릭시 최대 배너 마지막수치 최소 처음수치로 이동(각 값은 무한으로 변경)
+
+
+
+    // console.log(myIndex);
     bannerSlideI(myIndex);
+
+    // 배너 이동처리
+// var myPercent = -myIndex*100;
+// bannerUl.animate({marginLeft:myPercent+'%'},timed/20);
+  // indi.find('li').eq(myIndex).find('i').addClass('active');
+  // indi.find('li').eq(myIndex).find('i').siblings().removeClass('active');
+  
+  indi.find('li').eq(myIndex).find('i').removeClass('far');
+  indi.find('li').eq(myIndex).find('i').addClass('fas');
+  indi.find('li').eq(myIndex).siblings().find('i').addClass('far');
+  indi.find('li').eq(myIndex).siblings().find('i').removeClass('fas');
+  // indi.
+
   });
 
+
+
 // 자동 슬라이드 배너처리
-var startSlide = function() { myAutoSlide = setInterval(function() { rbtn.trigger('click');}, timed); };
-var stopSlide = function() { clearInterval(myAutoSlide); };
+
+var startSlide = function() 
+{ myAutoSlide = setInterval(function() 
+  { rbtn.trigger('click');}, timed*2); };
+
+var stopSlide = function() 
+{ clearInterval(myAutoSlide); };
+
 startSlide();
 
 // playBtn 상태를 확인하고, 재생버튼에 대한 내용 처리
@@ -136,8 +177,7 @@ if(nowPause){
  }
 };
 
-// 플레이 버튼활용하기
-// var playBtn = indi.find('button'); // 상단에 적용된 상태 
+// // 플레이 버튼활용하기
 playBtn.on('click',['button'], function(e) {
   e.preventDefault();
   var nowPause = playBtn.find('i').hasClass('fa-pause-circle');
