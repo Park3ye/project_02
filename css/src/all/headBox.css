@@ -66,10 +66,10 @@ width: 100%; height:100%;text-transform:capitalize; }
 그 위에 ps_coffee>li를 올리고, 각각의 메뉴마다 호버시 이 메뉴별 li
 를 보이게 한다.*/
 .menu_wrap .menu_ps:after{content:" ";display: block; 
-                            width:100vw; height: 200px; 
+                            width:100vw; height: 210px; 
                             background-color:#fff;
                             z-index:-10;
-                            position: absolute;top:16.5%;
+                            position: absolute;top:16%;
                             left:50%; margin-left:-50vw;
                             border-bottom:2px solid #333;}
 
